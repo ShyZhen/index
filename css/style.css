@@ -1,0 +1,282 @@
+html, body
+{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+video {
+    position: absolute;
+    right:0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -9999;
+}
+h2 {
+    margin-bottom: 1.5rem;
+    font-weight: 100;
+}
+
+@-webkit-keyframes hue {
+    from {
+        -webkit-filter: hue-rotate(0deg);
+    }
+    to {
+        -webkit-filter: hue-rotate(-360deg);
+    }
+}
+.selector-div--title {
+    padding-top: 15%;
+}
+.content {
+    font-family: 'Josefin Slab', 'Myriad Pro', Arial, sans-serif;
+    min-width: 1366px;
+}
+.video-title {
+    text-align: center;
+    color: #f35626;
+    background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 2s infinite linear;
+    font-size: 5rem;
+}
+.selector-div--title p {
+    text-align: center;
+    color: white;
+    opacity: 0.5;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.selector-container-video {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.selector-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.selector-div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.selector-foot {
+    position: absolute; bottom: 10px; right: 25px; z-index: 1000;
+}
+
+/*图标样式*/
+.video-icon {
+    color: #e23a6e;
+    text-shadow: 1px 1px 1px rgba(151,24,64,0.2);
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    -webkit-backface-visibility: hidden;
+}
+.contact {
+    margin-top: 40px;
+}
+.contact a {
+    text-decoration:none;
+    margin: 20px 10px 10px 10px;
+}
+.contact a i {
+    font-size: 20px;
+    color: #efeded;
+    opacity: 0.5;
+}
+
+/*图标 hover*/
+.contact .icon-zhuye2 {
+    -webkit-transform: rotate(0deg) scale(1);
+    -moz-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+    -webkit-transition: all 0.25s ease-out 0s;
+    -moz-transition: all 0.25s ease-out 0s;
+    transition: all 0.25s ease-out 0s;
+}
+.contact .icon-zhuye2:hover {
+    color: #02d3f7;
+    display: inline-block;
+    -webkit-transform: rotate(360deg) scale(1.5);
+    -moz-transform: rotate(360deg) scale(1.5);
+    transform: rotate(360deg) scale(1.5);
+    -webkit-transition: all 0.25s ease-out 0s;
+    -moz-transition: all 0.25s ease-out 0s;
+    transition: all 0.25s ease-out 0s;
+}
+.contact .icon-github2 {
+	-webkit-transform: rotate(0deg) scale(1);
+    -moz-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+    -webkit-transition: all 0.25s ease-out 0s;
+    -moz-transition: all 0.25s ease-out 0s;
+    transition: all 0.25s ease-out 0s;
+}
+.contact .icon-github2:hover {
+    color: #59e023;
+    display: inline-block;
+    -webkit-transform: rotate(360deg) scale(1.5);
+    -moz-transform: rotate(360deg) scale(1.5);
+    transform: rotate(360deg) scale(1.5);
+    -webkit-transition: all 0.25s ease-out 0s;
+    -moz-transition: all 0.25s ease-out 0s;
+    transition: all 0.25s ease-out 0s;
+
+}
+.contact .icon-centericresume {
+	-webkit-transform: rotate(0deg) scale(1);
+    -moz-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+    -webkit-transition: all 0.25s ease-out 0s;
+    -moz-transition: all 0.25s ease-out 0s;
+    transition: all 0.25s ease-out 0s;
+}
+.contact .icon-centericresume:hover {
+    color: #fd808a;
+    display: inline-block;
+    -webkit-transform: rotate(360deg) scale(1.5);
+    -moz-transform: rotate(360deg) scale(1.5);
+    transform: rotate(360deg) scale(1.5);
+    -webkit-transition: all 0.25s ease-out 0s;
+    -moz-transition: all 0.25s ease-out 0s;
+    transition: all 0.25s ease-out 0s;
+}
+.contact .icon-shequ4 {
+    -webkit-transform: rotate(0deg) scale(1);
+    -moz-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+    -webkit-transition: all 0.25s ease-out 0s;
+    -moz-transition: all 0.25s ease-out 0s;
+    transition: all 0.25s ease-out 0s;
+}
+.contact .icon-shequ4:hover {
+    color: #f7db02;
+    display: inline-block;
+    -webkit-transform: rotate(360deg) scale(1.5);
+    -moz-transform: rotate(360deg) scale(1.5);
+    transform: rotate(360deg) scale(1.5);
+    -webkit-transition: all 0.25s ease-out 0s;
+    -moz-transition: all 0.25s ease-out 0s;
+    transition: all 0.25s ease-out 0s;
+}
+.contact .icon-weibo {
+    -webkit-transform: rotate(0deg) scale(1);
+    -moz-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+    -webkit-transition: all 0.25s ease-out 0s;
+    -moz-transition: all 0.25s ease-out 0s;
+    transition: all 0.25s ease-out 0s;
+}
+.contact .icon-weibo:hover {
+    color: #e6152e;
+    display: inline-block;
+    -webkit-transform: rotate(360deg) scale(1.5);
+    -moz-transform: rotate(360deg) scale(1.5);
+    transform: rotate(360deg) scale(1.5);
+    -webkit-transition: all 0.25s ease-out 0s;
+    -moz-transition: all 0.25s ease-out 0s;
+    transition: all 0.25s ease-out 0s;
+}
+
+.copyright a {
+    color: white;
+    text-decoration:none;
+    margin-bottom: 10px; font-size: 12px;
+    opacity: 0.5;
+}
+
+/* aos div */
+ * {
+     box-sizing: border-box;
+ }
+
+.item {
+    width: 100%;
+    height: 500px;
+    background: #ccc;
+    text-align: center;
+    color: #FFF;
+    font-size: 100px;
+}
+
+
+.selector-div--video {
+    animation: 0.4s myscale 1;
+}
+@keyframes myscale {
+    0% {
+        transform: scale(1.6);
+        -ms-transform: scale(1.6);
+        -moz-transform: scale(1.6);
+        -webkit-transform: scale(1.6);
+        -o-transform: scale(1.6)
+    }
+
+    100% {
+        transform: scale(1);
+        -ms-transform: scale(1);
+        -moz-transform: scale(1);
+        -webkit-transform: scale(1);
+        -o-transform: scale(1)
+    }
+}
+
+@-moz-keyframes myscale {
+    0% {
+        transform: scale(1.6);
+        -ms-transform: scale(1.6);
+        -moz-transform: scale(1.6);
+        -webkit-transform: scale(1.6);
+        -o-transform: scale(1.6)
+    }
+
+    100% {
+        transform: scale(1);
+        -ms-transform: scale(1);
+        -moz-transform: scale(1);
+        -webkit-transform: scale(1);
+        -o-transform: scale(1)
+    }
+}
+
+@-webkit-keyframes myscale {
+    0% {
+        transform: scale(1.6);
+        -ms-transform: scale(1.6);
+        -moz-transform: scale(1.6);
+        -webkit-transform: scale(1.6);
+        -o-transform: scale(1.6)
+    }
+
+    100% {
+        transform: scale(1);
+        -ms-transform: scale(1);
+        -moz-transform: scale(1);
+        -webkit-transform: scale(1);
+        -o-transform: scale(1)
+    }
+}
+
+@-o-keyframes myscale {
+    0% {
+        transform: scale(1.6);
+        -ms-transform: scale(1.6);
+        -moz-transform: scale(1.6);
+        -webkit-transform: scale(1.6);
+        -o-transform: scale(1.6)
+    }
+
+    100% {
+        transform: scale(1);
+        -ms-transform: scale(1);
+        -moz-transform: scale(1);
+        -webkit-transform: scale(1);
+        -o-transform: scale(1)
+    }
+}
