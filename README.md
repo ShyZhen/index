@@ -1,8 +1,9 @@
-### index
-一个入口页/首页
+# index
+______
+ - 一个入口页/首页
 
-### view
-
+## view
+______
 
 ![预览图](http://img.litblc.com/phpb.io.png)
 
