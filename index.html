@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/loading.css"/>
     <link rel="stylesheet" href="./font-icon/iconfont.css"/>
     <link rel="stylesheet" href="./css/animate/animate.css">
     <link rel="stylesheet" href="./css/aos/aos.css"/>
@@ -14,8 +15,14 @@
 </head>
 <body>
 
-<div class="content">
+<div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+    <div class="load_title">正在拼命加载...<br><span>Litblc</span></div>
+</div>
 
+<div class="content">
     <section class="selector-container-video">
         <div class="selector-div">
             <video preload="auto" autoplay="" loop="" class="selector-div--video" style="width: 100%">

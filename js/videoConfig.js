@@ -24,3 +24,4 @@ $(document).ready(function() {
     ];
     $(".selector-div--video").attr('src', videoArr[currentItem])
 });
+
