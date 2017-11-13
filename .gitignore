@@ -2,3 +2,5 @@
 .idea
 beian.png
 host/
+node_modules/
+vendor/

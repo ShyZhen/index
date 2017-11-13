@@ -7,15 +7,3 @@ var litblc = 'oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 console.log('%cHey guy, what do you want to do now?', 'background-image:-webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );color:transparent;-webkit-background-clip: text;font-size:16px;');
 console.log(litblc);
 console.log("\nThe source code is available for here https://github.com/shyZhen/index\nI'm work with PHP | MYSQL | LINUX | JS | VUE | NODEJS\nhuaixiu.zhen@gmail.com\n");
-
-$(window).load(function(){
-    $('body').addClass('loaded');
-    $('#loader-wrapper .load_title').remove();
-    //$("head").append("<link>");
-    //var css = $("head").children(":last");
-    //css.attr({
-    //    rel:  "stylesheet",
-    //    type: "text/css",
-    //    href: "./css/style.css?version=20171024"
-    //});
-});

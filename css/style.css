@@ -194,7 +194,7 @@ h2 {
  }
 .item {
     width: 100%;
-    height: 500px;
+    height: 100vh;
     background: #ccc;
     text-align: center;
     color: #FFF;
