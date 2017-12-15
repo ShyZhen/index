@@ -24,14 +24,15 @@ h2 {
         -webkit-filter: hue-rotate(-360deg);
     }
 }
-.selector-div--title {
-    padding-top: 15%;
-}
+/*.selector-div--title {*/
+    /*padding-top: 15%;*/
+/*}*/
 .content {
     font-family: 'Josefin Slab', 'Myriad Pro', Arial, sans-serif;
     min-width: 1366px;
+    height: 100%;
 }
-.video-title {
+#video-title {
     text-align: center;
     color: #f35626;
     background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
@@ -40,6 +41,9 @@ h2 {
     -webkit-animation: hue 2s infinite linear;
     font-size: 5rem;
 }
+#intro-span {
+    padding-top: 15%;
+}
 .selector-div--title p {
     text-align: center;
     color: white;
@@ -47,22 +51,22 @@ h2 {
     font-size: 12px;
     letter-spacing: 1px;
 }
-.selector-container-video {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    height: 100vh;
-}
+/*.selector-container-video {*/
+    /*overflow: hidden;*/
+    /*position: relative;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+/*}*/
 .selector-container {
     overflow: hidden;
     position: relative;
     width: 100%;
 }
-.selector-div {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
+/*.selector-div {*/
+    /*position: relative;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+/*}*/
 .selector-foot {
     position: absolute; bottom: 10px; right: 25px; z-index: 1000;
 }
