@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./font-icon/iconfont.css"/>
     <link rel="stylesheet" href="./css/animate/animate.css">
     <link rel="stylesheet" href="./css/aos/aos.css"/>
-    <link rel="stylesheet" href="./css/style.css?version=20171024"/>
+    <link rel="stylesheet" href="./css/style.css?version=20171216"/>
     <script src="js/jquery.min.js"></script>
     <script src="js/videoConfig.js"></script>
     <script src="css/fullpage/jquery.fullpage.min.js"></script>
@@ -20,18 +20,18 @@
         <div class="section active">
             <div class="content">
                 <div>
-                    <video data-autoplay preload="auto" autoplay="" loop="" class="selector-div--video">
+                    <video data-autoplay preload="auto" autoplay="" loop="" id="selector-div--video" class="">
                         <source src="">
                     </video>
                     <div class="selector-div--title">
-                        <span style="display: block;" class="flip animated" id="intro-span">
+                        <span style="display: block;" class="" id="intro-span">
                             <h2 id="video-title">L I T B L C</h2>
                             <p>You must be very hard to look effortless.</p>
                             <p>你必须非常努力，才能看起来毫不费力</p>
                         </span>
                     </div>
 
-                    <div class="video-icon contact bounceInUp animated">
+                    <div id="icon-div" class="video-icon contact animated">
                         <a href="https://www.litblc.com"><i class="icon iconfont icon-zhuye2"></i></a>
                         <a href="https://github.com/ShyZhen/"><i class="icon iconfont icon-github2"></i></a>
                         <a href="http://info.phpb.io"><i class="icon iconfont icon-centericresume"></i></a>
@@ -62,6 +62,9 @@
         $(window).load(function(){
             window.setTimeout(function(){
                 $('body').removeClass('loading');
+                $('.selector-div--title span').addClass('flip animated');
+                $('#icon-div').addClass('bounceInUp');
+                $('#selector-div--video').addClass('selector-div--video');
             }, 2000);
         });
 

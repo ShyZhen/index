@@ -83,6 +83,7 @@ h2 {
     font-weight: 900;
     text-align: center;
     -webkit-backface-visibility: hidden;
+    animation-duration: 1.5s;
 }
 .contact {
     margin-top: 40px;
