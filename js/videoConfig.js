@@ -22,5 +22,5 @@ $(document).ready(function() {
         //'http://img.litblc.com/Riverside.mp4',
         //'http://img.litblc.com/Thirst.mp4'
     ];
-    $(".selector-div--video").attr('src', videoArr[currentItem])
+    $("#selector-div--video").attr('src', videoArr[currentItem])
 });

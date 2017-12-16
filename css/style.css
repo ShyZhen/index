@@ -27,18 +27,62 @@ h2 {
 }
 
 /*loading css*/
-.loading {
-    background:url(../loading.gif) 50% no-repeat;
-}
-.loading .main {
-    opacity:0;
-    opacity:0;
-}
 .main {
-    -webkit-transition:opacity .6s;
-    -moz-transition:opacity .6s;
-    -o-transition:opacity .6s;
-    transition:opacity .6s;
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 1.5s; /*持续时间*/
+    -webkit-animation-iteration-count: 1; /*次数*/
+    -webkit-animation-delay: 2s; /*延迟时间*/
+}
+@-webkit-keyframes fadeIn {
+    0% {  opacity: 0;  }
+    50% {  opacity: 0;  }
+    100% {  opacity: 1;  }
+}
+.overlay {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0;
+}
+.overlay--loader {
+    z-index: 1000;
+    background: #fa7e88;
+}
+.js .overlay--active {
+    pointer-events: auto;
+    opacity: 1;
+}
+.loader {
+    display: flex;
+}
+.loader div {
+    width: 30px;
+    height: 30px;
+    margin: -30px 0.2em 0;
+    border: 4px solid;
+    background: #e9e9e9;
+    animation: anim-loader 0.8s alternate infinite forwards;
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.loader div:nth-child(2) {
+    border-radius: 50%;
+    background: #c2292e;
+    animation-delay: 0.15s;
+}
+.loader div:nth-child(3) {
+    animation-delay: 0.3s;
+}
+@keyframes anim-loader {
+    100% {
+        transform: translate3d(0,30px,0) scale3d(0.9,0.9,1);
+    }
 }
 
 /*content*/
@@ -83,6 +127,7 @@ h2 {
     font-weight: 900;
     text-align: center;
     -webkit-backface-visibility: hidden;
+    animation-duration: 1.5s;
 }
 .contact {
     margin-top: 40px;
