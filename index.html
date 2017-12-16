@@ -11,41 +11,39 @@
     <script src="js/videoConfig.js"></script>
     <script src="css/fullpage/jquery.fullpage.min.js"></script>
     <script src="css/aos/aos.js"></script>
-    <script src="js/index.js"></script>
-
-    <title></title>
+    <script src="js/config.js"></script>
+    <title>一个要成为网红的程序员</title>
 </head>
-
+<body class="loading">
+<div class="main">
     <div id="fullpage">
         <div class="section active">
             <div class="content">
-                <div class="selector-container-video">
-                    <div class="selector-div">
-                        <video data-autoplay preload="auto" autoplay="" loop="" class="selector-div--video">
-                            <source src="">
-                        </video>
-                        <div class="selector-div--title">
-                            <span style="display: block;" class="flip animated" id="intro-span">
-                                <h2 id="video-title">L I T B L C</h2>
-                                <p>You must be very hard to look effortless.</p>
-                                <p>你必须非常努力，才能看起来毫不费力</p>
-                            </span>
-                        </div>
-
-                        <div class="video-icon contact bounceInUp animated">
-                            <a href="https://www.litblc.com"><i class="icon iconfont icon-zhuye2"></i></a>
-                            <a href="https://github.com/ShyZhen/"><i class="icon iconfont icon-github2"></i></a>
-                            <a href="http://info.phpb.io"><i class="icon iconfont icon-centericresume"></i></a>
-                            <a href="http://phpb.io"><i class="icon iconfont icon-shequ4"></i></a>
-                            <a href="http://weibo.com/litblc"><i class="icon iconfont icon-weibo"></i></a>
-                        </div>
+                <div>
+                    <video data-autoplay preload="auto" autoplay="" loop="" class="selector-div--video">
+                        <source src="">
+                    </video>
+                    <div class="selector-div--title">
+                        <span style="display: block;" class="flip animated" id="intro-span">
+                            <h2 id="video-title">L I T B L C</h2>
+                            <p>You must be very hard to look effortless.</p>
+                            <p>你必须非常努力，才能看起来毫不费力</p>
+                        </span>
                     </div>
 
-                    <div class="selector-foot">
-                        <p class="copyright">
-                            <a href="https://www.litblc.com">© 2017 一个要成为网红的程序员 | 甄怀修的个人博客 ❤</a>
-                        </p>
+                    <div class="video-icon contact bounceInUp animated">
+                        <a href="https://www.litblc.com"><i class="icon iconfont icon-zhuye2"></i></a>
+                        <a href="https://github.com/ShyZhen/"><i class="icon iconfont icon-github2"></i></a>
+                        <a href="http://info.phpb.io"><i class="icon iconfont icon-centericresume"></i></a>
+                        <a href="http://phpb.io"><i class="icon iconfont icon-shequ4"></i></a>
+                        <a href="http://weibo.com/litblc"><i class="icon iconfont icon-weibo"></i></a>
                     </div>
+                </div>
+
+                <div class="selector-foot">
+                    <p class="copyright">
+                        <a href="https://www.litblc.com">© 2017 一个要成为网红的程序员 | 甄怀修的个人博客 ❤</a>
+                    </p>
                 </div>
             </div>
         </div>
@@ -61,15 +59,21 @@
         <!--<div class="item" data-aos="flip-up">5</div>-->
 
     <script>
-        AOS.init({
-            duration: 300,
-            easing: 'ease-in-sine'
+        $(window).load(function(){
+            window.setTimeout(function(){
+                $('body').removeClass('loading');
+            }, 2000);
         });
 
         $(document).ready(function() {
             $('#fullpage').fullpage();
         });
-    </script>
 
+        AOS.init({
+            duration: 300,
+            easing: 'ease-in-sine'
+        });
+    </script>
+</div>
 </body>
 </html>
