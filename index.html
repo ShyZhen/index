@@ -169,64 +169,13 @@
             $('#fullpage').fullpage({
                 menu: '#menu',
                 lockAnchors: false,
-                anchors:['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9'],  //地址栏url
+                anchors:['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9', 'page10'],  //地址栏url
                 navigation: true,                             // 右侧指针
                 navigationPosition: 'right',
                 navigationTooltips: ['首页', '美女1', '美女2'],
-                showActiveTooltip: true,                     //是否显示右侧指针的tips
                 slidesNavigation: true,
                 slidesNavPosition: 'bottom',
-
-                //Scrolling
-                css3: true,
-                scrollingSpeed: 700,
-                autoScrolling: true,
-                fitToSection: true,
-                fitToSectionDelay: 1000,
-                scrollBar: false,
-                easing: 'easeInOutCubic',
-                easingcss3: 'ease',
                 loopBottom: true,
-                loopTop: false,
-                loopHorizontal: true,
-                continuousVertical: false,
-                continuousHorizontal: false,
-                scrollHorizontally: true,//  在水平幻灯片也可以使用鼠标滑动
-                interlockedSlides: false,
-                dragAndMove: false,
-                offsetSections: false,
-                resetSliders: true,    //定义是否在离开节后重置每个滑块
-                fadingEffect: false,    //定义是否使用淡入淡出效果，而不是默认的滚动效果。可能的值是true，false，sections，slides
-                normalScrollElements: null,  //在滚动某些元素时避免自动滚动   比如'#element1, .element2',
-                scrollOverflow: false,
-                scrollOverflowReset: false,
-                scrollOverflowOptions: null,
-                touchSensitivity: 5,  //（默认5）定义浏览器窗口宽度/高度的百分比，以及在导航到下一部分/幻灯片时滑动必须测量多少
-                normalScrollElementTouchThreshold: 5,
-                bigSectionsDestination: null,
-
-                //Accessibility
-                keyboardScrolling: true,   //定义是否可以使用键盘浏览内容
-                animateAnchor: true,        //定义给定锚点（＃）的站点的负载是否会随着动画滚动到目的地，或直接加载给定的部分
-                recordHistory: true,    //（默认true）定义是否将网站的状态推送到浏览器的历史记录。当设置为网站的true每个部分/幻灯片将作为一个新的页面，浏览器的后退和前进按钮将滚动部分/幻灯片到达网站的上一个或下一个状态
-
-                //Design
-                controlArrows: true,   //（默认true）确定是否将幻灯片的控制箭头向右或向左移动。
-                verticalCentered: true,
-                sectionsColor : ['none'],  //(默认none）定义background-color每个部分的CSS 属性  如 ['#ccc', '#fff']
-                paddingTop: '0',  //（default 0）定义每个部分的顶部填充，其中包含数值及其度量  3em
-                paddingBottom: '0',
-                fixedElements: '#header, .footer',  //（默认null）定义当使用该css3选项保持固定时，哪些元素将从插件的滚动结构中移除
-                responsiveWidth: 0,
-                responsiveHeight: 0,
-                responsiveSlides: false,
-                parallax: true,  //定义是否在部分/幻灯片上使用视差背景效果
-                parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
-
-                //Custom selectors
-                sectionSelector: '.section',  //（默认.section）定义用于插件部分的jQuery选择器。有时可能需要更改，以避免与使用与fullpage.js相同的选择器的其他插件的问题。
-                slideSelector: '.slide',  //默认.slide）定义用于插件幻灯片的jQuery选择器。有时可能需要更改，以避免与使用与fullpage.js相同的选择器的其他插件的问题。
-                lazyLoading: false
             });
         });
 
