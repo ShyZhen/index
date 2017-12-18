@@ -16,7 +16,7 @@
     <title>一个要成为网红的程序员</title>
 </head>
 <body>
-    <div id="loader" class="overlay overlay--loader overlay--active">
+<div id="loader" class="overlay overlay--loader overlay--active">
     <div class="loader">
         <div></div>
         <div></div>
@@ -24,9 +24,109 @@
     </div>
 </div>
 
+<style>
+    .page-1 {
+        height: 100%;
+        background-image: url(static/images/ariel-lustre.jpg);
+        background-size:cover;
+    }
+    .page-2 {
+        height: 100%;
+        background-image: url(static/images/christopher-campbell.jpg);
+        background-size:cover;
+    }
+    .page-3 {
+        height: 100%;
+        background-image: url(static/images/drew-patrick-miller.jpg);
+        background-size:cover;
+    }
+    .page-4 {
+        height: 100%;
+        background-image: url(static/images/lea-dubedout.jpg);
+        background-size:cover;
+    }
+    .page-5 {
+        height: 100%;
+        background-image: url(static/images/neal-kharawala.jpg);
+        background-size:cover;
+    }
+    .page-6 {
+        height: 100%;
+        background-image: url(static/images/pete-bellis.jpg);
+        background-size:cover;
+    }
+    .page-7 {
+        height: 100%;
+        background-image: url(static/images/pete-bellis2.jpg);
+        background-size:cover;
+    }
+    .page-8 {
+        height: 100%;
+        background-image: url(static/images/sergey-zolkin.jpg);
+        background-size:cover;
+    }
+    .page-9 {
+        height: 100%;
+        background-image: url(static/images/vil-son.jpg);
+        background-size:cover;
+    }
+    #menu li {
+        display:inline-block;
+        margin: 10px;
+        color: #000;
+        background:#fff;
+        background: rgba(255,255,255, 0.5);
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+    }
+    #menu li.active{
+        background:#666;
+        background: rgba(0,0,0, 0.5);
+        color: #fff;
+    }
+    #menu li a{
+        text-decoration:none;
+        color: #000;
+    }
+    #menu li.active a:hover{
+        color: #000;
+    }
+    #menu li:hover{
+        background: rgba(255,255,255, 0.8);
+    }
+    #menu li a,
+    #menu li.active a{
+        padding: 9px 18px;
+        display:block;
+    }
+    #menu li.active a{
+        color: #fff;
+    }
+    #menu{
+        position:fixed;
+        top:0;
+        left:0;
+        height: 40px;
+        z-index: 70;
+        width: 100%;
+        padding: 0;
+        margin:0;
+        opacity: 0.8;
+    }
+</style>
+
+<ul id="menu">
+    <li data-menuanchor="index"><a href="#index">index</a></li>
+    <li data-menuanchor="page1"><a href="#page1">First slide</a></li>
+    <li data-menuanchor="page2"><a href="#page2">Second slide</a></li>
+    <li data-menuanchor="page3"><a href="#page3">Third slide</a></li>
+    <li data-menuanchor="page4"><a href="#page4">Fourth slide</a></li>
+    <li data-menuanchor="page5"><a href="#page5">Fourth slide</a></li>
+</ul>
+
     <div class="main">
         <div id="fullpage">
-            <div class="section active">
+            <div class="section index">
                 <div class="content">
                     <div>
                         <video data-autoplay preload="auto" autoplay="" loop="" id="selector-div--video">
@@ -56,9 +156,44 @@
                     </div>
                 </div>
             </div>
-            <div class="section">PAGE ONE</div>
-            <div class="section">PAGE TWO</div>
-            <div class="section">PAGE THREE</div>
+
+            <div class="section page-1">
+                <div style="padding: 15%;color: white">
+                    <h1>Lovely images <br />for a lovely page</h1>
+                </div>
+            </div>
+            <div class="section page-2">
+                <div class="">
+                </div>
+            </div>
+            <div class="section page-3">
+                <div class="">
+                </div>
+            </div>
+            <div class="section page-4">
+                <div class="">
+                </div>
+            </div>
+            <div class="section page-5">
+                <div class="">
+                </div>
+            </div>
+            <div class="section page-6">
+                <div class="">
+                </div>
+            </div>
+            <div class="section page-7">
+                <div class="">
+                </div>
+            </div>
+            <div class="section page-8">
+                <div class="">
+                </div>
+            </div>
+            <div class="section page-9">
+                <div class="">
+                </div>
+            </div>
         </div>
 
             <!--<div class="item" data-aos="fade-right">1</div>-->
@@ -78,7 +213,16 @@
         });
 
         $(document).ready(function() {
-            $('#fullpage').fullpage();
+            $('#fullpage').fullpage({
+                menu: '#menu',
+                anchors:['index','page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9', 'page10'],  //地址栏url
+//                navigation: true,
+                navigationPosition: 'right',
+                navigationTooltips: ['首页', '美女1', '美女2'],
+                slidesNavigation: true,
+                loopBottom: true,
+                lazyLoading: false
+            });
         });
 
         AOS.init({
