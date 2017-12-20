@@ -123,12 +123,16 @@
 </style>
 
 <ul id="menu">
-    <li data-menuanchor="index"><a href="#index">index</a></li>
-    <li data-menuanchor="page1"><a href="#page1">First slide</a></li>
-    <li data-menuanchor="page2"><a href="#page2">Second slide</a></li>
-    <li data-menuanchor="page3"><a href="#page3">Third slide</a></li>
-    <li data-menuanchor="page4"><a href="#page4">Fourth slide</a></li>
-    <li data-menuanchor="page5"><a href="#page5">Fourth slide</a></li>
+    <li data-menuanchor="index"><a href="#Welcome">Welcome</a></li>
+    <li data-menuanchor="page-1"><a href="#Curiosity">Curiosity</a></li>
+    <li data-menuanchor="page2"><a href="#Silent">Silent</a></li>
+    <li data-menuanchor="page3"><a href="#Depressed">Depressed</a></li>
+    <li data-menuanchor="page4"><a href="#Sunny">Sunny</a></li>
+    <li data-menuanchor="page5"><a href="#Smile">Smile</a></li>
+    <li data-menuanchor="page6"><a href="#Winter">Winter</a></li>
+    <li data-menuanchor="page7"><a href="#Firm">Firm</a></li>
+    <li data-menuanchor="page8"><a href="#Life">Life</a></li>
+    <li data-menuanchor="page89"><a href="#Innocence">Innocence</a></li>
 </ul>
 
     <div class="main">
@@ -239,10 +243,10 @@
         $(document).ready(function() {
             $('#fullpage').fullpage({
                 menu: '#menu',
-                anchors:['index','page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9', 'page10'],  //地址栏url
+                anchors:['Welcome','Curiosity', 'Silent', 'Depressed', 'Sunny', 'Smile', 'Winter', 'Firm', 'Life', 'Innocence'],  //地址栏url
 //                navigation: true,
                 navigationPosition: 'right',
-                navigationTooltips: ['首页', '美女1', '美女2'],
+                navigationTooltips: [],
                 slidesNavigation: true,
                 loopBottom: true,
                 lazyLoading: false
