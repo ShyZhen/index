@@ -118,6 +118,15 @@ h2 {
 .selector-foot {
     position: absolute; bottom: 10px; right: 25px; z-index: 1000;
 }
+.selector-foot a {
+    color: white;
+    text-decoration:none;
+    margin-bottom: 10px; font-size: 12px;
+    opacity: 0.5;
+}
+.miitbeian {
+    margin-right: 10px;
+}
 
 /*icon css*/
 .video-icon {
@@ -235,13 +244,6 @@ h2 {
     transition: all 0.25s ease-out 0s;
 }
 
-.copyright a {
-    color: white;
-    text-decoration:none;
-    margin-bottom: 10px; font-size: 12px;
-    opacity: 0.5;
-}
-
 /* aos div */
  * {
      box-sizing: border-box;
@@ -321,4 +323,134 @@ h2 {
         -webkit-transform: scale(1);
         -o-transform: scale(1)
     }
+}
+
+/* fullpage page css */
+.curiosity {
+    height: 100%;
+    background-image: url(../static/images/ariel-lustre.jpg);
+    background-size:cover;
+}
+.curiosity .curiosity-div {
+    color: #f1e7ea;
+}
+.silent {
+    height: 100%;
+    background-image: url(../static/images/christopher-campbell.jpg);
+    background-size:cover;
+}
+.silent .silent-div {
+    color: #a1a1a1;
+}
+.depressed {
+    height: 100%;
+    background-image: url(../static/images/drew-patrick-miller.jpg);
+    background-size:cover;
+}
+.depressed .depressed-div {
+    padding: 0 0 0 10%;
+    color: #46474b;
+}
+.sunny {
+    height: 100%;
+    background-image: url(../static/images/lea-dubedout.jpg);
+    background-size:cover;
+}
+.sunny .sunny-div {
+    padding: 20% 0 0 35%;
+    color: #f8e8e8;
+}
+.smile {
+    height: 100%;
+    background-image: url(../static/images/neal-kharawala.jpg);
+    background-size:cover;
+}
+.smile .smile-div {
+    color: #ffffff;
+}
+.winter {
+    height: 100%;
+    background-image: url(../static/images/pete-bellis.jpg);
+    background-size:cover;
+}
+.winter .winter-div {
+    padding: 15% 0 0 65%;
+    color: #82786b;
+}
+.firm {
+    height: 100%;
+    background-image: url(../static/images/pete-bellis2.jpg);
+    background-size:cover;
+}
+.firm .firm-div {
+    color: #f3f3f5;
+}
+.life {
+    height: 100%;
+    background-image: url(../static/images/sergey-zolkin.jpg);
+    background-size:cover;
+}
+.life .life-div {
+    padding: 0 0 0 40%;
+    color: white;
+}
+.innocence {
+    height: 100%;
+    background-image: url(../static/images/vil-son.jpg);
+    background-size:cover;
+}
+.innocence .innocence-div {
+    padding: 10% 0 0 58%;
+    color: #faffff;
+}
+
+#menu li {
+    display:inline-block;
+    margin: 10px;
+    color: #000;
+    background:#fff;
+    background: rgba(255,255,255, 0.5);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+#menu li.active{
+    background:#666;
+    background: rgba(0,0,0, 0.5);
+    color: #fff;
+}
+#menu li a{
+    text-decoration:none;
+    color: #000;
+}
+#menu li.active a:hover{
+    color: #000;
+}
+#menu li:hover{
+    background: rgba(255,255,255, 0.8);
+}
+#menu li a,
+#menu li.active a{
+    padding: 9px 18px;
+    display:block;
+}
+#menu li.active a{
+    color: #fff;
+}
+#menu{
+    position:fixed;
+    top:0;
+    left:0;
+    height: 40px;
+    z-index: 70;
+    width: 100%;
+    padding: 0;
+    margin:0;
+    opacity: 0.8;
+}
+.section-div {
+    padding: 20% 0 0 10%;
+    color: white;
+    opacity: 0.5;
+    font-size: 12px;
+    letter-spacing: 1px;
 }
