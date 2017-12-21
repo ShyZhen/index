@@ -150,13 +150,27 @@
         $(document).ready(function() {
             $('#fullpage').fullpage({
                 menu: '#menu',
-                anchors:['Welcome','Curiosity', 'Silent', 'Depressed', 'Sunny', 'Smile', 'Winter', 'Firm', 'Life', 'Innocence'],  //地址栏url
+                anchors:['Welcome','Curiosity', 'Silent', 'Depressed', 'Sunny', 'Smile', 'Winter', 'Firm', 'Life', 'Innocence'],
 //                navigation: true,
                 navigationPosition: 'right',
                 navigationTooltips: [],
                 slidesNavigation: true,
-                loopBottom: true,
-                lazyLoading: false
+//                loopBottom: true,
+                lazyLoading: true,
+
+
+				'afterLoad': function(anchorLink, index){
+                    if (index != 1){
+                        $(this).find('.section-div').removeClass('fadeOutDownBig fadeOutUpBig').addClass('display animated fadeInUp');
+                    }
+				},
+				'onLeave': function(index, nextIndex, direction){
+					if (index != 1 && direction == 'down'){
+                        $(this).find('.section-div').removeClass('animated fadeInUp fadeOutUpBig').addClass('animated fadeOutDownBig');
+					} else if (index != 1 && direction == 'up'){
+                        $(this).find('.section-div').removeClass('animated fadeInUp fadeOutDownBig').addClass('animated fadeOutUpBig');
+                    }
+				}
             });
         });
 

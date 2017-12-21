@@ -340,7 +340,7 @@ h2 {
     background-size:cover;
 }
 .silent .silent-div {
-    color: #a1a1a1;
+    color: white;
 }
 .depressed {
     height: 100%;
@@ -374,7 +374,7 @@ h2 {
     background-size:cover;
 }
 .winter .winter-div {
-    padding: 15% 0 0 65%;
+    padding: 38% 0 0 65%;
     color: #82786b;
 }
 .firm {
@@ -383,7 +383,7 @@ h2 {
     background-size:cover;
 }
 .firm .firm-div {
-    color: #f3f3f5;
+    color: #fbfbfb;
 }
 .life {
     height: 100%;
@@ -448,9 +448,13 @@ h2 {
     opacity: 0.8;
 }
 .section-div {
+    display: none;
     padding: 20% 0 0 10%;
     color: white;
     opacity: 0.5;
     font-size: 12px;
     letter-spacing: 1px;
+}
+.display {
+    display: block;
 }
