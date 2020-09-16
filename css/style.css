@@ -29,9 +29,9 @@ h2 {
 /*loading css*/
 .main {
     -webkit-animation-name: fadeIn;
-    -webkit-animation-duration: 1.5s; /*持续时间*/
-    -webkit-animation-iteration-count: 1; /*次数*/
-    -webkit-animation-delay: 2s; /*延迟时间*/
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-delay: 2s;
 }
 @-webkit-keyframes fadeIn {
     0% {  opacity: 0;  }

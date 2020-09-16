@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/fullpage/jquery.fullpage.min.css"/>
     <link rel="stylesheet" href="./font-icon/iconfont.css"/>
     <link rel="stylesheet" href="./css/animate/animate.css">
-    <link rel="stylesheet" href="./css/aos/aos.css"/>
     <link rel="stylesheet" href="./css/style.css?version=20171221"/>
     <script>document.documentElement.className = 'js';</script>
     <script src="js/jquery.min.js?version=20171221"></script>
     <script src="js/videoConfig.js"></script>
-    <script src="css/fullpage/jquery.fullpage.min.js"></script>
-    <script src="css/aos/aos.js"></script>
+<!--    <script src="css/fullpage/jquery.fullpage.min.js"></script>-->
+<!--    <link rel="stylesheet" href="./css/fullpage/jquery.fullpage.min.css"/>-->
+<!--    <script src="css/aos/aos.js"></script>-->
+<!--    <link rel="stylesheet" href="./css/aos/aos.css"/>-->
     <script src="js/console.js"></script>
     <title>一个要成为网红的程序员</title>
 </head>
@@ -24,18 +24,18 @@
     </div>
 </div>
 
-<ul id="menu">
-    <li data-menuanchor="Welcome"><a href="#Welcome">Welcome</a></li>
-    <li data-menuanchor="Curiosity"><a href="#Curiosity">Curiosity</a></li>
-    <li data-menuanchor="Silent"><a href="#Silent">Silent</a></li>
-    <li data-menuanchor="Depressed"><a href="#Depressed">Depressed</a></li>
-    <li data-menuanchor="Sunny"><a href="#Sunny">Sunny</a></li>
-    <li data-menuanchor="Smile"><a href="#Smile">Smile</a></li>
-    <li data-menuanchor="Winter"><a href="#Winter">Winter</a></li>
-    <li data-menuanchor="Firm"><a href="#Firm">Firm</a></li>
-    <li data-menuanchor="Life"><a href="#Life">Life</a></li>
-    <li data-menuanchor="Innocence"><a href="#Innocence">Innocence</a></li>
-</ul>
+<!--<ul id="menu">-->
+<!--    <li data-menuanchor="Welcome"><a href="#Welcome">Welcome</a></li>-->
+<!--    <li data-menuanchor="Curiosity"><a href="#Curiosity">Curiosity</a></li>-->
+<!--    <li data-menuanchor="Silent"><a href="#Silent">Silent</a></li>-->
+<!--    <li data-menuanchor="Depressed"><a href="#Depressed">Depressed</a></li>-->
+<!--    <li data-menuanchor="Sunny"><a href="#Sunny">Sunny</a></li>-->
+<!--    <li data-menuanchor="Smile"><a href="#Smile">Smile</a></li>-->
+<!--    <li data-menuanchor="Winter"><a href="#Winter">Winter</a></li>-->
+<!--    <li data-menuanchor="Firm"><a href="#Firm">Firm</a></li>-->
+<!--    <li data-menuanchor="Life"><a href="#Life">Life</a></li>-->
+<!--    <li data-menuanchor="Innocence"><a href="#Innocence">Innocence</a></li>-->
+<!--</ul>-->
 
 <div class="main">
     <div id="fullpage">
@@ -75,7 +75,7 @@
                 </div>
             </div>
         </div>
-
+<!--
         <div class="section curiosity">
             <div class="section-div curiosity-div">
                 <p>What's unforgettable is memory, and what's still continuing is life.Instead, what you have missed is just passing by.</p>
@@ -130,6 +130,7 @@
                 <p>心简单，世界就是童话；心复杂，世界就是迷宫。</p>
             </div>
         </div>
+        -->
     </div>
         <!--<div class="item" data-aos="fade-right">1</div>-->
         <!--<div class="item" data-aos="fade-left">2</div>-->
@@ -138,6 +139,8 @@
         <!--<div class="item" data-aos="flip-up">5</div>-->
 </div>
     <script>
+
+        // loading
         $(window).load(function(){
             window.setTimeout(function(){
                 $('#loader').removeClass('overlay--active');
@@ -147,37 +150,39 @@
             }, 2000);
         });
 
-        $(document).ready(function() {
-            $('#fullpage').fullpage({
-                menu: '#menu',
-                anchors:['Welcome','Curiosity', 'Silent', 'Depressed', 'Sunny', 'Smile', 'Winter', 'Firm', 'Life', 'Innocence'],
-//                navigation: true,
-                navigationPosition: 'right',
-                navigationTooltips: [],
-                slidesNavigation: true,
-//                loopBottom: true,
-                lazyLoading: true,
+        // fullpage
+//         $(document).ready(function() {
+//             $('#fullpage').fullpage({
+//                 menu: '#menu',
+//                 anchors:['Welcome','Curiosity', 'Silent', 'Depressed', 'Sunny', 'Smile', 'Winter', 'Firm', 'Life', 'Innocence'],
+// //                navigation: true,
+//                 navigationPosition: 'right',
+//                 navigationTooltips: [],
+//                 slidesNavigation: true,
+// //                loopBottom: true,
+//                 lazyLoading: true,
+//
+// 				'afterLoad': function(anchorLink, index){
+//                     if (index != 1){
+//                         $(this).find('.section-div').removeClass('fadeOutDownBig fadeOutUpBig').addClass('display-block animated fadeInUp');
+//                     }
+// 				},
+// 				'onLeave': function(index, nextIndex, direction){
+// 					if (index != 1 && direction == 'down'){
+//                         $(this).find('.section-div').removeClass('animated fadeInUp fadeOutUpBig').addClass('display-inline animated fadeOutDownBig');
+// 					} else if (index != 1 && direction == 'up'){
+//                         $(this).find('.section-div').removeClass('animated fadeInUp fadeOutDownBig').addClass('display-inline animated fadeOutUpBig');
+//                     }
+// 				}
+//             });
+//         });
 
-				'afterLoad': function(anchorLink, index){
-                    if (index != 1){
-                        $(this).find('.section-div').removeClass('fadeOutDownBig fadeOutUpBig').addClass('display-block animated fadeInUp');
-                    }
-				},
-				'onLeave': function(index, nextIndex, direction){
-					if (index != 1 && direction == 'down'){
-                        $(this).find('.section-div').removeClass('animated fadeInUp fadeOutUpBig').addClass('display-inline animated fadeOutDownBig');
-					} else if (index != 1 && direction == 'up'){
-                        $(this).find('.section-div').removeClass('animated fadeInUp fadeOutDownBig').addClass('display-inline animated fadeOutUpBig');
-                    }
-				}
-            });
-        });
-/*
-        AOS.init({
-            duration: 300,
-            easing: 'ease-in-sine'
-        });
-*/
+        // AOS 类库
+        // AOS.init({
+        //     duration: 300,
+        //     easing: 'ease-in-sine'
+        // });
+
     </script>
 </body>
 </html>
